@@ -27,7 +27,8 @@
         android:icon="?iconAdd"
         android:title="@string/add_habit"
         app:showAsAction="always"/>
-
+</menu>
+<!--
     <item
         android:id="@+id/action_filter"
         android:icon="?iconFilter"
@@ -93,4 +94,4 @@
         android:orderInCategory="100"
         android:title="@string/about"
         app:showAsAction="never"/>
-</menu>
+</menu>-->

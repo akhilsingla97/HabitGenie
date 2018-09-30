@@ -67,14 +67,14 @@ public class ListHabitsMenu extends BaseMenu
     @Override
     public void onCreate(@NonNull Menu menu)
     {
-        MenuItem nightModeItem = menu.findItem(R.id.actionToggleNightMode);
+/*        MenuItem nightModeItem = menu.findItem(R.id.actionToggleNightMode);
         nightModeItem.setChecked(themeSwitcher.isNightMode());
 
         MenuItem hideArchivedItem = menu.findItem(R.id.actionHideArchived);
         hideArchivedItem.setChecked(!showArchived);
 
         MenuItem hideCompletedItem = menu.findItem(R.id.actionHideCompleted);
-        hideCompletedItem.setChecked(!showCompleted);
+        hideCompletedItem.setChecked(!showCompleted);*/
     }
 
     @Override
@@ -82,51 +82,51 @@ public class ListHabitsMenu extends BaseMenu
     {
         switch (item.getItemId())
         {
-            case R.id.actionToggleNightMode:
-                screen.toggleNightMode();
-                return true;
+//            case R.id.actionToggleNightMode:
+//                screen.toggleNightMode();
+//                return true;
 
             case R.id.actionAdd:
                 screen.showCreateHabitScreen();
                 return true;
-
-            case R.id.actionFAQ:
-                screen.showFAQScreen();
-                return true;
-
-            case R.id.actionAbout:
-                screen.showAboutScreen();
-                return true;
-
-            case R.id.actionSettings:
-                screen.showSettingsScreen();
-                return true;
-
-            case R.id.actionHideArchived:
-                toggleShowArchived();
-                invalidate();
-                return true;
-
-            case R.id.actionHideCompleted:
-                toggleShowCompleted();
-                invalidate();
-                return true;
-
-            case R.id.actionSortColor:
-                adapter.setOrder(HabitList.Order.BY_COLOR);
-                return true;
-
-            case R.id.actionSortManual:
-                adapter.setOrder(HabitList.Order.BY_POSITION);
-                return true;
-
-            case R.id.actionSortName:
-                adapter.setOrder(HabitList.Order.BY_NAME);
-                return true;
-
-            case R.id.actionSortScore:
-                adapter.setOrder(HabitList.Order.BY_SCORE);
-                return true;
+//
+//            case R.id.actionFAQ:
+//                screen.showFAQScreen();
+//                return true;
+//
+//            case R.id.actionAbout:
+//                screen.showAboutScreen();
+//                return true;
+//
+//            case R.id.actionSettings:
+//                screen.showSettingsScreen();
+//                return true;
+//
+//            case R.id.actionHideArchived:
+//                toggleShowArchived();
+//                invalidate();
+//                return true;
+//
+//            case R.id.actionHideCompleted:
+//                toggleShowCompleted();
+//                invalidate();
+//                return true;
+//
+//            case R.id.actionSortColor:
+//                adapter.setOrder(HabitList.Order.BY_COLOR);
+//                return true;
+//
+//            case R.id.actionSortManual:
+//                adapter.setOrder(HabitList.Order.BY_POSITION);
+//                return true;
+//
+//            case R.id.actionSortName:
+//                adapter.setOrder(HabitList.Order.BY_NAME);
+//                return true;
+//
+//            case R.id.actionSortScore:
+//                adapter.setOrder(HabitList.Order.BY_SCORE);
+//                return true;
 
             default:
                 return false;
