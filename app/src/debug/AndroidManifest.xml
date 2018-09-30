@@ -36,4 +36,8 @@
         tools:replace="maxSdkVersion"
         android:maxSdkVersion="99" />
 
+    <application
+        android:icon="@mipmap/ic_launcher_main">
+    </application>
+
 </manifest>
