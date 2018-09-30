@@ -41,20 +41,20 @@ public class ShowHabitRootView extends BaseRootView
     @NonNull
     private Habit habit;
 
-    @BindView(R.id.frequencyCard)
+/*    @BindView(R.id.frequencyCard)
     FrequencyCard frequencyCard;
 
     @BindView(R.id.streakCard)
-    StreakCard streakCard;
+    StreakCard streakCard;*/
 
     @BindView(R.id.subtitleCard)
     SubtitleCard subtitleCard;
 
-    @BindView(R.id.overviewCard)
+/*    @BindView(R.id.overviewCard)
     OverviewCard overviewCard;
 
     @BindView(R.id.scoreCard)
-    ScoreCard scoreCard;
+    ScoreCard scoreCard;*/
 
     @BindView(R.id.historyCard)
     HistoryCard historyCard;
@@ -144,11 +144,11 @@ public class ShowHabitRootView extends BaseRootView
     private void initCards()
     {
         subtitleCard.setHabit(habit);
-        overviewCard.setHabit(habit);
-        scoreCard.setHabit(habit);
+/*        overviewCard.setHabit(habit);
+        scoreCard.setHabit(habit);*/
         historyCard.setHabit(habit);
-        streakCard.setHabit(habit);
-        frequencyCard.setHabit(habit);
+/*        streakCard.setHabit(habit);
+        frequencyCard.setHabit(habit);*/
     }
 
     public interface Controller extends HistoryCard.Controller
